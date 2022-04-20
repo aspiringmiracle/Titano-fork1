@@ -1,5 +1,6 @@
 import "../styles/tailwind.css";
 import "../styles/slick.css";
+import "../styles/landing.css";
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />;

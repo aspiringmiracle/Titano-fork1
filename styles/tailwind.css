@@ -9,9 +9,7 @@ html {
 body {
   @apply bg-white-500;
 }
-p {
-  @apply text-black-500;
-}
+
 .animation-hover:after {
   background: none repeat scroll 0 0 transparent;
   content: "";
