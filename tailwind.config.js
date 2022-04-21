@@ -5,6 +5,7 @@ module.exports = {
   //   "./components/*.js",
   //   "./components/**/*.js",
   // ],
+  
   theme: {
     boxShadow: {
       sm: "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
@@ -21,6 +22,7 @@ module.exports = {
       "orange-md": "0px 20px 40px -15px rgba(245,56,56,0.81) ",
       none: "none",
     },
+
     colors: {
       transparent: "transparent",
       black: {
@@ -47,6 +49,7 @@ module.exports = {
     extend: {},
   },
   variants: {
+    
     extend: {
       boxShadow: ["active", "hover"],
     },

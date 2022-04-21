@@ -21,19 +21,15 @@ const Header = () => {
     <>
       <header
         className={
-          "fixed top-0 w-full  z-30 bg-white-500 transition-all " +
+          "fixed top-0 w-full  z-30 transition-all " +
           (scrollActive ? " shadow-md pt-0" : " pt-4")
         }
       >
         <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4 top-nav">
           <div className="col-start-1 col-end-2 flex items-center logo-container">
-            <Image
+            <img
               src="/assets/logo.png"
               alt="Mumbai Finance"
-              quality={100}
-              width={200}
-              height={140}
-              layout="responsive"
             />
           </div>
           <input id="menu-toggle" type="checkbox"/>
@@ -47,7 +43,7 @@ const Header = () => {
               </a>
             </Link>
             <ButtonOutline>Sign Up</ButtonOutline> */}
-            <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500  items-center menu">
+            <ul className="hidden lg:flex col-start-4 col-end-8 items-center menu">
             <LinkScroll
               activeClass="active"
               to="about"
@@ -61,7 +57,7 @@ const Header = () => {
                 "px-4 py-2 mx-2 cursor-pointer inline-block relative" +
                 (activeLink === "about"
                   ? " text-orange-500 "
-                  : " text-black-500 hover:text-orange-500 a")
+                  : "  hover:text-orange-500 a")
               }
             >
               FAQ's
@@ -79,7 +75,7 @@ const Header = () => {
                 "px-4 py-2 mx-2 cursor-pointer inline-block relative" +
                 (activeLink === "feature"
                   ? " text-orange-500 "
-                  : " text-black-500 hover:text-orange-500 ")
+                  : " hover:text-orange-500 ")
               }
             >
               Discord
@@ -95,9 +91,9 @@ const Header = () => {
               }}
               className={
                 "px-4 py-2 mx-2 cursor-pointer inline-block relative" +
-                (activeLink === "pricing"
-                  ? " text-orange-500 "
-                  : " text-black-500 hover:text-orange-500 ")
+                (activeLink === ""
+                  ? " text-green-500 "
+                  : " hover:text-orange-500 ")
               }
             >
               Telegram
@@ -112,10 +108,10 @@ const Header = () => {
                 setActiveLink("testimoni");
               }}
               className={
-                "rounded-md text-white-500 px-4 py-2 mx-2 cursor-pointer inline-block relative open-app" +
+                "rounded-md text-white-500 px-4 py-3 mx-2 cursor-pointer inline-block relative open-app" +
                 (activeLink === "testimoni"
                   ? " text-orange-500 "
-                  : " text-black-500 hover:text-black-100 ")
+                  : " hover:text-black-100 ")
               }
             >
               Open App

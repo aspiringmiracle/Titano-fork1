@@ -1,47 +1,48 @@
 import Image from "next/image";
 import React from "react";
+import Overlay from './misc/Overlay'
 
+import ButtonPrimary from "./misc/ButtonPrimary";
 const Feature = () => {
   return (
-    <div
-      className="max-w-screen-xl mt-8 mb-6 sm:mt-14 sm:mb-14 px-6 sm:px-8 lg:px-16 mx-auto"
-      id="feature"
-    >
-      <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-8 py-8 my-12">
-        <div className="flex w-full justify-end">
-          <div className="h-full w-full p-4">
+    <div className="banner mt-32 items-center flex">
+      <Overlay/>
+      <div className="container">
+        <div className="block">
+          <div className="flex justify-between">
+
+              <div className="p-2 ml-4 w-2/3">
+                <div className="block">
+                    <div className="w-full">
+                      <h2 className="text-6xl font-medium ">
+                        The Best Auto-Staking & Auto-Compounding Protocol in Crypto
+                      </h2>
+                    </div>
+                    <div className="w-full my-12 ml-1">
+                      <ul className="list-disc list-inside ml-1">
+                        <li className="text-xl leading-20">Highest Fixed APY – 102,483%</li>
+                        <li className="text-xl leading-20">First Automatic Staking and Compounding in Your Wallet!</li>
+                        <li className="text-xl leading-20">Get Rewards Every 30 Minutes / 48 Times Daily!</li>
+                      </ul>
+                    </div>
+                </div>
+              </div>
             <Image
-              src="/assets/Illustration2.png"
-              alt="VPN Illustrasi"
-              layout="responsive"
-              quality={100}
-              height={414}
-              width={508}
+              src="/assets/Free.png"
+              alt="Picture of the author"
+              width="w-full"
+              height={300}
+              className="float-right"
             />
           </div>
         </div>
-        <div className="flex flex-col items-end justify-center ml-auto w-full lg:w-9/12">
-          <h3 className="text-3xl lg:text-4xl font-medium leading-relaxed text-black-600">
-            We Provide Many Features You Can Use
-          </h3>
-          <p className="my-2 text-black-500">
-            You can explore the features that we provide with fun and have their
-            own functions each feature.
-          </p>
-          <ul className="text-black-500 self-start list-inside ml-8">
-            <li className="relative circle-check custom-list">
-              Powerfull online protection.
-            </li>
-            <li className="relative circle-check custom-list">
-              Internet without borders.
-            </li>
-            <li className="relative circle-check custom-list">
-              Supercharged VPN
-            </li>
-            <li className="relative circle-check custom-list">
-              No specific time limits.
-            </li>
-          </ul>
+        <div className="block w-full flex">
+          <div className="w-1/4 ml-7">
+            <ButtonPrimary addClass={'bg-green-500'}>Buy $TITANO</ButtonPrimary>
+          </div>
+          <div className="w-1/4 ml-7">
+            <ButtonPrimary>white paper</ButtonPrimary>
+          </div>
         </div>
       </div>
     </div>
