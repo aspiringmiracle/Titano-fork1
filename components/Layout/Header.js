@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
+
 // Import react scroll
 import { Link as LinkScroll } from "react-scroll";
 import ButtonOutline from "../misc/ButtonOutline.";
+import ButtonApp from "../misc/ButtonApp";
 import LogoVPN from "../../public/assets/Logo.svg";
+
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState(null);
@@ -21,11 +25,29 @@ const Header = () => {
           (scrollActive ? " shadow-md pt-0" : " pt-4")
         }
       >
-        <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">
-          <div className="col-start-1 col-end-2 flex items-center">
-            <LogoVPN className="h-8 w-auto" />
+        <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4 top-nav">
+          <div className="col-start-1 col-end-2 flex items-center logo-container">
+            <Image
+              src="/assets/logo.png"
+              alt="Mumbai Finance"
+              quality={100}
+              width={200}
+              height={140}
+              layout="responsive"
+            />
           </div>
-          <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500  items-center">
+          <input id="menu-toggle" type="checkbox"/>
+          <label className="menu-button-container" for="menu-toggle">
+            <div className="menu-button"></div>
+          </label>
+          <div className="col-start-10 col-end-12 font-medium flex justify-end items-center menu-container">
+            {/* <Link href="/">
+              <a className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-orange-500 transition-all">
+                  Sign In
+              </a>
+            </Link>
+            <ButtonOutline>Sign Up</ButtonOutline> */}
+            <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500  items-center menu">
             <LinkScroll
               activeClass="active"
               to="about"
@@ -36,13 +58,13 @@ const Header = () => {
                 setActiveLink("about");
               }}
               className={
-                "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
+                "px-4 py-2 mx-2 cursor-pointer inline-block relative" +
                 (activeLink === "about"
-                  ? " text-orange-500 animation-active "
+                  ? " text-orange-500 "
                   : " text-black-500 hover:text-orange-500 a")
               }
             >
-              About
+              FAQ's
             </LinkScroll>
             <LinkScroll
               activeClass="active"
@@ -54,13 +76,13 @@ const Header = () => {
                 setActiveLink("feature");
               }}
               className={
-                "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
+                "px-4 py-2 mx-2 cursor-pointer inline-block relative" +
                 (activeLink === "feature"
-                  ? " text-orange-500 animation-active "
+                  ? " text-orange-500 "
                   : " text-black-500 hover:text-orange-500 ")
               }
             >
-              Feature
+              Discord
             </LinkScroll>
             <LinkScroll
               activeClass="active"
@@ -72,13 +94,13 @@ const Header = () => {
                 setActiveLink("pricing");
               }}
               className={
-                "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
+                "px-4 py-2 mx-2 cursor-pointer inline-block relative" +
                 (activeLink === "pricing"
-                  ? " text-orange-500 animation-active "
+                  ? " text-orange-500 "
                   : " text-black-500 hover:text-orange-500 ")
               }
             >
-              Pricing
+              Telegram
             </LinkScroll>
             <LinkScroll
               activeClass="active"
@@ -90,22 +112,15 @@ const Header = () => {
                 setActiveLink("testimoni");
               }}
               className={
-                "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
+                "rounded-md text-white-500 px-4 py-2 mx-2 cursor-pointer inline-block relative open-app" +
                 (activeLink === "testimoni"
-                  ? " text-orange-500 animation-active "
-                  : " text-black-500 hover:text-orange-500 ")
+                  ? " text-orange-500 "
+                  : " text-black-500 hover:text-black-100 ")
               }
             >
-              Testimonial
+              Open App
             </LinkScroll>
           </ul>
-          <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
-            <Link href="/">
-              <a className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-orange-500 transition-all">
-                  Sign In
-              </a>
-            </Link>
-            <ButtonOutline>Sign Up</ButtonOutline>
           </div>
         </nav>
       </header>
