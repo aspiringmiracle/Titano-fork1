@@ -1,28 +1,28 @@
 import Image from "next/image";
 import React from "react";
 import Overlay from './misc/Overlay'
-import Link from 'next/link'
+
 import ButtonPrimary from "./misc/ButtonPrimary";
 const Feature = () => {
   return (
-    <div className="banner">
+    <div className="banner mt-32 items-center flex">
       <Overlay/>
       <div className="container">
         <div className="block">
           <div className="flex justify-between">
 
-              <div className="p-2 ml-4">
+              <div className="p-2 ml-4 w-2/3">
                 <div className="block">
                     <div className="w-full">
-                      <h2 className="text-4xl font-medium ">
+                      <h2 className="text-6xl font-medium ">
                         The Best Auto-Staking & Auto-Compounding Protocol in Crypto
                       </h2>
                     </div>
-                    <div className="w-full mt-4 ml-1">
+                    <div className="w-full my-12 ml-1">
                       <ul className="list-disc list-inside ml-1">
-                        <li className="text-xl">Highest Fixed APY – 102,483%</li>
-                        <li className="text-xl">First Automatic Staking and Compounding in Your Wallet!</li>
-                        <li className="text-xl">Get Rewards Every 30 Minutes / 48 Times Daily!</li>
+                        <li className="text-xl leading-20">Highest Fixed APY – 102,483%</li>
+                        <li className="text-xl leading-20">First Automatic Staking and Compounding in Your Wallet!</li>
+                        <li className="text-xl leading-20">Get Rewards Every 30 Minutes / 48 Times Daily!</li>
                       </ul>
                     </div>
                 </div>
