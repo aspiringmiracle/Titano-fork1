@@ -1,12 +1,7 @@
 import React, { useState, useEffect } from "react";
-import Link from "next/link";
-import Image from "next/image";
 
 // Import react scroll
 import { Link as LinkScroll } from "react-scroll";
-import ButtonOutline from "../misc/ButtonOutline.";
-import ButtonApp from "../misc/ButtonApp";
-import LogoVPN from "../../public/assets/Logo.svg";
 
 
 const Header = () => {
@@ -17,6 +12,11 @@ const Header = () => {
       setScrollActive(window.scrollY > 20);
     });
   }, []);
+
+  const to_newTab = (blank_url) => {
+    window.open(blank_url);
+  };
+
   return (
     <>
       <header
@@ -31,28 +31,23 @@ const Header = () => {
               src="/assets/logo.png"
               alt="Mumbai Finance"
             />
+            <div className="logo-title">
+              <div>MUMBAI</div>
+              <div>FINANCE</div>
+            </div>
           </div>
           <input id="menu-toggle" type="checkbox"/>
           <label className="menu-button-container" for="menu-toggle">
             <div className="menu-button"></div>
           </label>
           <div className="col-start-10 col-end-12 font-medium flex justify-end items-center menu-container">
-            {/* <Link href="/">
-              <a className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-orange-500 transition-all">
-                  Sign In
-              </a>
-            </Link>
-            <ButtonOutline>Sign Up</ButtonOutline> */}
             <ul className="hidden lg:flex col-start-4 col-end-8 items-center menu">
             <LinkScroll
               activeClass="active"
-              to="about"
               spy={true}
               smooth={true}
               duration={1000}
-              onSetActive={() => {
-                setActiveLink("about");
-              }}
+              onClick={() => to_newTab("https://docs.mumbai.finance/")}
               className={
                 "px-4 py-2 mx-2 cursor-pointer inline-block relative" +
                 (activeLink === "about"
@@ -68,9 +63,7 @@ const Header = () => {
               spy={true}
               smooth={true}
               duration={1000}
-              onSetActive={() => {
-                setActiveLink("feature");
-              }}
+              onClick={() => to_newTab("https://discord.com/")}
               className={
                 "px-4 py-2 mx-2 cursor-pointer inline-block relative" +
                 (activeLink === "feature"
@@ -86,9 +79,7 @@ const Header = () => {
               spy={true}
               smooth={true}
               duration={1000}
-              onSetActive={() => {
-                setActiveLink("pricing");
-              }}
+              onClick={() => to_newTab("https://t.me/")}
               className={
                 "px-4 py-2 mx-2 cursor-pointer inline-block relative" +
                 (activeLink === ""
