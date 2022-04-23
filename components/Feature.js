@@ -38,7 +38,7 @@ const Feature = () => {
         </div>
         <div className="block w-full flex">
           <div className="w-1/4 ml-7">
-            <ButtonPrimary addClass={'bg-green-500'}>Buy $TITANO</ButtonPrimary>
+            <ButtonPrimary addClass={'bg-green-500'}>Buy $MUMBAI</ButtonPrimary>
           </div>
           <div className="w-1/4 ml-7">
             <ButtonPrimary>white paper</ButtonPrimary>

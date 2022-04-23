@@ -27,9 +27,9 @@ const Play = ({
           <div className="flex flex-col  pl-20">
             <p className="text-green-500 capitalize text-md">Prize-Linked Accumulating Yield</p>
             <h2 className="text-4xl  capitalize py-8">MUMBAI<span className="uppercase">p.l.a.y.</span></h2>
-            <h1 className ="text-lg ">Titano P.L.A.Y. is the new Titano TAP based project that allows Titano token holders to generate even more rewards. Simple, Powerful and Proven.</h1>
+            <h1 className ="text-lg ">Mumbai P.L.A.Y. is the new Mumbai TAP based project that allows Mumbai token holders to generate even more rewards. Simple, Powerful and Proven.</h1>
             <ul className="list-disc text-lg list-inside ml-1 py-8">
-              <li>Your Titano Tokens Give You Access to P.L.A.Y.</li>
+              <li>Your Mumbai Tokens Give You Access to P.L.A.Y.</li>
               <li>Easy to Enter Easy to Play</li>
               <li>Multiple Big Winners Each Week</li>
               <li>No One Loses Their Initial Deposit</li>

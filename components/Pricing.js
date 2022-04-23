@@ -10,7 +10,7 @@ const Pricing = () => {
       <div className="max-w-screen-xl  px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
         <div className="flex flex-col w-full">
           <h3 className="text-6xl sm:text-3xl lg:text-6xl font-medium leading-relaxed">
-            Titano Autostaking Protocol
+            Mumbai Autostaking Protocol
           </h3>
           <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
             <div className="flex flex-col justify-center items-center py-4 px-6 lg:px-12 xl:px-20">
@@ -41,11 +41,11 @@ const Pricing = () => {
           </div>
         </div>
         <div className="flex flex-col w-full">
-          <p className="text-sm text-black">$TITANO Contract: 0xba96731324de188ebc1ed87ca74544ddebc07d7f</p>
+          <p className="text-sm text-black">$MUMBAI Contract: 0xba96731324de188ebc1ed87ca74544ddebc07d7f</p>
         </div>
         <div className="flex flex-col w-full my-16">
           <h3 className="text-5xl sm:text-3xl lg:text-4xl font-medium  sm:w-6/12 lg:w-9/12 mx-auto">
-            Titano rewards holders with automatic compounding interest, increasing their TITANO holdings over time.
+            Mumbai rewards holders with automatic compounding interest, increasing their MUMBAI holdings over time.
           </h3>
           <p className="leading-normal  mx-auto my-2 w-10/12 sm:w-7/12 lg:w-6/12">
             See LaslesVPN everywhere to make it easier for you when you move
