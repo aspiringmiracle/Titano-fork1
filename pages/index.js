@@ -2,7 +2,7 @@ import Head from "next/head";
 import Feature from "../components/Feature";
 import Pricing from "../components/Pricing";
 import Estimate from "../components/Estimate";
-import Token from "../components/Token"
+import Token from "../components/token"
 import Play from '../components/Play'
 import Layout from "../components/Layout/Layout";
 import External_link from '../components/external_link'
