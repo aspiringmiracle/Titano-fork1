@@ -30,7 +30,7 @@ const Feature = () => {
             <Image
               src="/assets/Free.png"
               alt="Picture of the author"
-              width="w-full"
+              width={250}
               height={300}
               className="float-right"
             />
