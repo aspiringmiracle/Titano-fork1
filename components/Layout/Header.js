@@ -95,9 +95,7 @@ const Header = () => {
               spy={true}
               smooth={true}
               duration={1000}
-              onSetActive={() => {
-                setActiveLink("testimoni");
-              }}
+              onClick={() => to_newTab("https://mumbaifinance.netlify.app/")}
               className={
                 "rounded-md text-white-500 px-4 py-3 mx-2 cursor-pointer inline-block relative open-app" +
                 (activeLink === "testimoni"
